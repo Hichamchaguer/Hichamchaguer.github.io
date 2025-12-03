@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Calendar, Briefcase, GraduationCap, Rocket, Award, Code } from 'lucide-react';
+import { Briefcase, GraduationCap, Rocket, Award, Code } from 'lucide-react';
 
 const milestones = [
   {
@@ -89,7 +89,7 @@ function TimelineItem({ milestone, index }) {
         <div className={`flex-1 ${isEven ? 'md:text-right' : 'md:text-left'}`}>
           <div className="bg-card p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
             <div className="flex items-center gap-2 mb-2 justify-start md:justify-start">
-              <Calendar className="w-4 h-4 text-primary" />
+              {/* <Calendar className="w-4 h-4 text-primary" /> */}
               <span className="text-sm font-semibold text-primary">{milestone.year}</span>
             </div>
             <h3 className="text-xl font-bold mb-2">{milestone.title}</h3>
